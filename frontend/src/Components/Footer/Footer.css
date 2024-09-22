@@ -1,0 +1,138 @@
+.footer {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background-color: #f9f9f9;
+    width: 100%;
+}
+
+.footer-logo img {
+    height: 50px;
+}
+
+.footer-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.footer-links ul {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    color: #252525;
+    font-size: 20px;
+    font-family: 'poppins';
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.footer-links li:hover {
+    color: #0077b5;
+}
+
+.social-icons {
+    display: flex;
+    gap: 30px;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons-container {
+    padding: 10px;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.icons-container:hover {
+    color: #0077b5;
+}
+
+.footer-copy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    color: #1a1a1a;
+    font-size: 20px;
+    font-family: 'poppins';
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.footer-copy hr {
+    width: 80%;
+    border: none;
+    border-radius: 10px;
+    height: 3px;
+    background-color: #c7c7c7;
+    margin-top: 100px;
+}
+
+.footer-copy p {
+    font-size: 14px;
+    color: #777;
+}
+
+
+/* Responsive Breakpoints */
+
+@media (max-width: 1024px) {
+    .footer-main {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-links ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .social-icons {
+        justify-content: center;
+    }
+    .footer-copy hr {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-links ul {
+        font-size: 18px;
+    }
+    .footer-copy p {
+        font-size: 13px;
+    }
+    .social-icons {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-links ul {
+        font-size: 16px;
+        gap: 15px;
+    }
+    .footer-copy p {
+        font-size: 12px;
+    }
+    .footer-copy hr {
+        margin-top: 60px;
+    }
+    .footer-logo img {
+        height: 40px;
+    }
+}
